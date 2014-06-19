@@ -1,0 +1,147 @@
+[ {
+    "user" : {
+        "firstname" : "Joffrey",
+        "lastname" : "Lannister",
+        "email" : null,
+        "uid" : null,
+        "createDate" : null,
+        "modifiedDate" : null,
+        "createdAt" : null,
+        "lastModifiedDate" : {
+            "secondOfDay" : 39890,
+            "minuteOfDay" : 664,
+            "centuryOfEra" : 20,
+            "monthOfYear" : 6,
+            "weekOfWeekyear" : 25,
+            "yearOfEra" : 2014,
+            "yearOfCentury" : 14,
+            "weekyear" : 2014,
+            "hourOfDay" : 11,
+            "minuteOfHour" : 4,
+            "secondOfMinute" : 50,
+            "millisOfSecond" : 607,
+            "millisOfDay" : 39890607,
+            "year" : 2014,
+            "dayOfMonth" : 17,
+            "dayOfWeek" : 2,
+            "era" : 1,
+            "dayOfYear" : 168,
+            "chronology" : {
+                "zone" : {
+                    "uncachedZone" : {
+                        "cachable" : true,
+                        "fixed" : false,
+                        "id" : "America/Denver"
+                    },
+                    "fixed" : false,
+                    "id" : "America/Denver"
+                }
+            },
+            "millis" : 1403024690607,
+            "zone" : {
+                "uncachedZone" : {
+                    "cachable" : true,
+                    "fixed" : false,
+                    "id" : "America/Denver"
+                },
+                "fixed" : false,
+                "id" : "America/Denver"
+            },
+            "equalNow" : false,
+            "beforeNow" : true,
+            "afterNow" : false
+        },
+        "createdBy" : null,
+        "lastModifedBy" : "system user"
+    },
+    "createdAt" : {
+        "secondOfDay" : 39890,
+        "minuteOfDay" : 664,
+        "centuryOfEra" : 20,
+        "monthOfYear" : 6,
+        "weekOfWeekyear" : 25,
+        "yearOfEra" : 2014,
+        "yearOfCentury" : 14,
+        "weekyear" : 2014,
+        "hourOfDay" : 11,
+        "minuteOfHour" : 4,
+        "secondOfMinute" : 50,
+        "millisOfSecond" : 613,
+        "millisOfDay" : 39890613,
+        "year" : 2014,
+        "dayOfMonth" : 17,
+        "dayOfWeek" : 2,
+        "era" : 1,
+        "dayOfYear" : 168,
+        "chronology" : {
+            "zone" : {
+                "uncachedZone" : {
+                    "cachable" : true,
+                    "fixed" : false,
+                    "id" : "America/Denver"
+                },
+                "fixed" : false,
+                "id" : "America/Denver"
+            }
+        },
+        "millis" : 1403024690613,
+        "zone" : {
+            "uncachedZone" : {
+                "cachable" : true,
+                "fixed" : false,
+                "id" : "America/Denver"
+            },
+            "fixed" : false,
+            "id" : "America/Denver"
+        },
+        "equalNow" : false,
+        "beforeNow" : true,
+        "afterNow" : false
+    },
+    "lastModifiedDate" : {
+        "secondOfDay" : 39890,
+        "minuteOfDay" : 664,
+        "centuryOfEra" : 20,
+        "monthOfYear" : 6,
+        "weekOfWeekyear" : 25,
+        "yearOfEra" : 2014,
+        "yearOfCentury" : 14,
+        "weekyear" : 2014,
+        "hourOfDay" : 11,
+        "minuteOfHour" : 4,
+        "secondOfMinute" : 50,
+        "millisOfSecond" : 613,
+        "millisOfDay" : 39890613,
+        "year" : 2014,
+        "dayOfMonth" : 17,
+        "dayOfWeek" : 2,
+        "era" : 1,
+        "dayOfYear" : 168,
+        "chronology" : {
+            "zone" : {
+                "uncachedZone" : {
+                    "cachable" : true,
+                    "fixed" : false,
+                    "id" : "America/Denver"
+                },
+                "fixed" : false,
+                "id" : "America/Denver"
+            }
+        },
+        "millis" : 1403024690613,
+        "zone" : {
+            "uncachedZone" : {
+                "cachable" : true,
+                "fixed" : false,
+                "id" : "America/Denver"
+            },
+            "fixed" : false,
+            "id" : "America/Denver"
+        },
+        "equalNow" : false,
+        "beforeNow" : true,
+        "afterNow" : false
+    },
+    "createdBy" : "system user",
+    "lastModifedBy" : "system user"
+} ]
