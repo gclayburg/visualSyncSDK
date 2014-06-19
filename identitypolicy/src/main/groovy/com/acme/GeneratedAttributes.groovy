@@ -30,15 +30,6 @@ public class GeneratedAttributes {
         return "top person organizationalperson inetorgperson"
     }
 
-    @TargetAttribute(target = "internalLDAP")
-    static String sn(User user){
-        if (user.lastname == null || user.lastname.equals("")) {
-            return user.firstname
-        } else {
-            return user.lastname
-        }
-    }
-
     @TargetAttribute(target = 'Active Directory BCT Domain',attributeName = "displayName")
     static String buildDisplayName(User user){
         def var

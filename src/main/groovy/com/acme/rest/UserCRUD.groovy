@@ -51,6 +51,17 @@ class UserCRUD {
         log.info("created/modified userid [{}] {} {}",idnum, first,last)
     }
 
+    public void createUser(def first,def idnum) {
+        def resp = restClient.post(
+                path: 'audited-users/auditedsave',
+                body: [firstname: first,id: idnum],
+                requestContentType: "application/json"
+        )
+
+        assert resp.status == 200 // user created on server
+        log.info("created/modified userid [{}] {} {}",idnum, first)
+    }
+
     def createRandomUsers(int numUsers) {
         def firstList = ["Bill","Bob","Jane","Peg","Frank","Don","Stacy","Cathy","Faye","Lars","Mike","Ethan","Hank","Sandra","Lori","Diane","Malia","Bridget","Cory","Shane","Shonda","Dave","Barb","Steve","Janna"]
         def lastList = ["Thomas","Miller","Sorensen","Fleming","Underwood","Wright","Anderson","Herman","Smith","Hanson","Pitrone","LeMond","Armstrong","Carter","Nickel"]
