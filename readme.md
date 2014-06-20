@@ -228,6 +228,7 @@ The value of the `sn` attribute did not change.  Why?  To find out, lets try thi
 ```
 
 and the result:
+
 ![enter image description here][10]
 
 Aha!  Even though this user didn't have a `lastname`, it was stored in the database as a empty `String` value.  This is an artifact of how the user was loaded.  The load_baratheon.groovy script that loaded values into the database supplied an empty `String` for `lastname` instead of just leaving it out.  Our `sn` attribute policy now accounts for both situations.  We can verify this with a representative sample of users in the policy console.
