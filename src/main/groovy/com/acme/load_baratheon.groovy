@@ -10,9 +10,10 @@ import groovyx.net.http.Method
  * @author Gary Clayburg
  */
 
-@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
-@Grab(group='org.slf4j',module = 'slf4j-api',version = '1.7.7')
-@Grab(group='org.slf4j',module = 'slf4j-simple',version = '1.7.7')
+//uncomment @Grab to execute as standalone script
+//@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
+//@Grab(group='org.slf4j',module = 'slf4j-api',version = '1.7.7')
+//@Grab(group='org.slf4j',module = 'slf4j-simple',version = '1.7.7')
 
 import groovyx.net.http.RESTClient
 import org.slf4j.Logger

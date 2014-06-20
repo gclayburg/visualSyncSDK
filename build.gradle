@@ -10,15 +10,26 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    ivy
+}
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.2.0'
     compile("org.codehaus.groovy.modules.http-builder:http-builder:0.7")
-    compile 'org.apache.ivy:ivy:2.3.0' //needed for IntelliJ groovyc to process @Grab in groovy scripts
+    ivy 'org.apache.ivy:ivy:2.3.0' //needed for IntelliJ groovyc to process @Grab in groovy scripts
     compile 'org.slf4j:slf4j-api:1.7.7'
     compile 'ch.qos.logback:logback-classic:1.1.2'
 
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
+
+tasks.withType(GroovyCompile){
+    groovyClasspath += configurations.ivy
+}
+
+//groovy{
+//    groovyClasspath = ''
+//}
 
 task wrapper(type: Wrapper) {
   gradleVersion = '1.12'
@@ -37,4 +48,27 @@ task execrun (type: JavaExec){
     main = "-jar"
     args relativePath("lib/policyconsole-0.2.war")
     args "--spring.config.location=" + relativePath("identitypolicy/config/application.properties")
+    args "--groovyHome=" + relativePath("identitypolicy/src/main/groovy/")
+}
+
+task load_baratheon (dependsOn: 'classes', type: JavaExec) {
+    main = 'com.acme.load_baratheon'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task load5 (dependsOn: 'classes', type: JavaExec) {
+    main = 'com.acme.load5'
+    classpath = sourceSets.main.runtimeClasspath
+}
+task printAudit (dependsOn: 'classes', type: JavaExec) {
+    main = 'com.acme.printAudit'
+    classpath = sourceSets.main.runtimeClasspath
+}
+task printUsers (dependsOn: 'classes', type: JavaExec) {
+    main = 'com.acme.printUsers'
+    classpath = sourceSets.main.runtimeClasspath
+}
+task loadEmpty (dependsOn: 'classes', type: JavaExec) {
+    main = 'com.acme.load5'
+    classpath = sourceSets.main.runtimeClasspath
 }

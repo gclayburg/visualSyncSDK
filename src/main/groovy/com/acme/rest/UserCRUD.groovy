@@ -1,11 +1,11 @@
 package com.acme.rest
 
-@Grab(group='ch.qos.logback',module ='logback-classic',version='1.1.2')
+//@Grab(group='ch.qos.logback',module ='logback-classic',version='1.1.2')
 
-@Grab(group='org.slf4j',module = 'slf4j-api',version = '1.7.7')
+//@Grab(group='org.slf4j',module = 'slf4j-api',version = '1.7.7')
 import groovy.util.logging.Slf4j
 
-@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
+//@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7')
 import groovyx.net.http.HTTPBuilder
 import groovyx.net.http.RESTClient
 import static groovyx.net.http.ContentType.JSON
