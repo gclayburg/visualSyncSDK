@@ -11,9 +11,12 @@ $ gradlew execrun
 
 This command will start an embedded Tomcat server on port 8080.  
 
-**Note: If you haven't used gradle before, this [gradle wrapper command (gradlew)][1] will download and install gradle for you**
-**Note: The first time this command is executed, it will download and start a MongoDB database**
-**Note: An embedded Tomcat server is bundled inside the war file.  Installing Tomcat is not necessary**
+
+* **Note: If you haven't used gradle before, this [gradle wrapper command (gradlew)][1] will download and install gradle for you**
+* **Note: The first time this command is executed, it will download and start a MongoDB database**
+* **Note: An embedded Tomcat server is bundled inside the war file.  Installing Tomcat is not necessary to run the server**
+
+
 
 The server is ready once you see this in the console output
 
