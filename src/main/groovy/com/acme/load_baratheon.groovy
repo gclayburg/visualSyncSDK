@@ -26,8 +26,6 @@ import groovyx.net.http.HTTPBuilder;
 final Logger log = LoggerFactory.getLogger("baratheon.groovy");
 
 def hostPort = 'http://localhost:8080/'
-//def hostPort = 'http://bagley.garyclayburg.com:8081/userconsole-1.0-SNAPSHOT/'
-//def hostPort = 'http://visualsync2.garyclayburg.cloudbees.net/'
 def restClient = new RESTClient(hostPort)
 
 //tell RESTClient that it can parse 'application/hal+json' returned content-type as 'application/json'

@@ -12,22 +12,27 @@ import com.garyclayburg.persistence.domain.User
  * @author Gary Clayburg
  */
 
+class TargetIn {
+    public static final BCT="Active Directory BCT Domain"
+}
+
 @AttributesClass
 class o2cAttributes {
 
-    @TargetAttribute(target = "Active Directory BCT Domain",attributeName = "dept")
+    @TargetAttribute(target = TargetIn.BCT,attributeName = "dept")
     static String department(User user){
-        return "dept 77"
+        return "dept 71" + Targets.BCT
     }
 
-    @TargetAttribute(target = "Active Directory BCT Domain")
+    @TargetAttribute(target = TargetIn.BCT)
     static String address1(User user){
         return GeneratedAttributes.streetAddress(user)
     }
 
-    @TargetAttribute(target = "Active Directory BCT Domain")
+    @TargetAttribute(target = Targets.BCT)
     static String userid(User user){
         return user.id
     }
 
 }
+

@@ -14,23 +14,23 @@ import com.garyclayburg.persistence.domain.User
 @AttributesClass
 public class GeneratedAttributes {
 
-    @TargetAttribute(target = "internalLDAP",attributeName = "cn")
+    @TargetAttribute(target = Targets.LDAP,attributeName = "cn")
     static String cn(User user){
         return user.firstname +" "+ user.lastname
     }
 
-    @TargetAttribute(target = "Active Directory BCT Domain", attributeName = "cn")
+    @TargetAttribute(target = Targets.BCT, attributeName = "cn")
     static adcn(User user){
         return cn(user)
     }
 
     //default attributeName is the name of the method - "objectclass" in this case
-    @TargetAttribute(target = "internalLDAP")
+    @TargetAttribute(target = Targets.LDAP)
     static String objectclass(User user){
         return "top person organizationalperson inetorgperson"
     }
 
-    @TargetAttribute(target = 'Active Directory BCT Domain',attributeName = "displayName")
+    @TargetAttribute(target = Targets.BCT,attributeName = "displayName")
     static String buildDisplayName(User user){
         def var
         if (user.lastname == null || user.lastname.equals("")){
