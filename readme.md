@@ -3,6 +3,9 @@
 # Quickstart
 
 1. clone this repository
+    ```
+    $ mkdir development
+    ```
 2. verify Java 7 (or higher) is installed
 3. Use gradle to run the application
 ```
