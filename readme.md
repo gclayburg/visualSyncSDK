@@ -2,27 +2,37 @@
 
 # Quickstart
 
-1. clone this repository to a directory on your local machine
+1. Clone this repository to a directory on your local machine
 
     ```
     $ mkdir development
     $ cd development
     $ git clone git@github.com:gclayburg/visualSyncSDK.git
+    ```
+2. Verify Oracle Java 7 (or higher) is installed
 
     ```
-2. verify Java 7 (or higher) is installed
-3. Use gradle to run the application
-```
-$ gradlew execrun
-```
+    $ java -version
+    java version "1.8.0_25"
+    Java(TM) SE Runtime Environment (build 1.8.0_25-b17)
+    Java HotSpot(TM) 64-Bit Server VM (build 25.25-b02, mixed mode)
 
-There are a lot of things happening behind the scenes here, especially the first time you run this command.  
-This command will start an embedded Tomcat server on port 8080.  
+    $  echo $JAVA_HOME
+    /usr/lib/jvm/java-8-oracle/
+    ```
+3. Use the embedded gradle to run the application
 
+    ```
+    $ cd visualSyncSDK
+    $ gradlew execrun
+    ```
 
-* **Note: If you haven't used gradle before, this [gradle wrapper command (gradlew)][1] will download and install gradle for you**
-* **Note: The first time this command is executed, it will download and start a MongoDB database**
-* **Note: An embedded Tomcat server is bundled inside the war file.  Installing Tomcat is not necessary to run the server**
+There are a lot of things happening behind the scenes here, especially the first time you run this command.  If you look close you will see several things being downloaded here, namely
+
+* [gradlew][1] will download and install gradle to build the project
+* [MongoDB](http://www.mongodb.org/) will be downloaded and installed
+
+* **Note: An embedded Tomcat server is bundled inside this project.  Installing Tomcat is not necessary to run the server**
 
 
 
@@ -33,16 +43,16 @@ Server is ready for e-business
 ```
 
 ## Loading users via REST
-At this point, the tomcat server is running with an empty MongoDB database.  
+At this point, the Tomcat server is running with an empty MongoDB database.  
 
 With the server running in one command window, start another command window and execute this gradle command:
 
 ```
 $ gradlew load_baratheon
 ```
-This command uses gradle to run this groovy script: **src/main/groovy src/main/groovy/com/acme/load_baratheon.groovy**
+This command uses gradle to run this groovy script: **src/main/groovy/com/acme/load_baratheon.groovy**
 
-The groovy script uses the visualSync REST API to load in a few users.  For this example we load only the first name, last name and a unique ID number:
+The groovy script uses the visualSync REST API to load in a few users.  For this example we load only a few simply user attributes such as first name, last name and a unique ID number:
 
 ```
 ...
