@@ -2,13 +2,22 @@
 
 # Quickstart
 
-1. clone this repository
+1. clone this repository to a directory on your local machine
+    $ mkdir development
+    $ cd development
+    $ git clone git@github.com:gclayburg/visualSyncSDK.git
+
+
+
+* **Note: These examples assume you are running on a Linux system.  However, Windows systems also work, you'll just need to adjust the commands as necessary.  **
+
 2. verify Java 7 (or higher) is installed
 3. Use gradle to run the application
 ```
 $ gradlew execrun
 ```
 
+There are a lot of things happening behind the scenes here, especially the first time you run this command.  
 This command will start an embedded Tomcat server on port 8080.  
 
 
@@ -25,7 +34,7 @@ Server is ready for e-business
 ```
 
 ## Loading users via REST
-At this point, the server is running, but there are no users loaded.  
+At this point, the tomcat server is running with an empty MongoDB database.  
 
 With the server running in one command window, start another command window and execute this gradle command:
 
