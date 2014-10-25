@@ -9,6 +9,8 @@
     $ cd development
     $ git clone git@github.com:gclayburg/visualSyncSDK.git
     ```
+    
+    *These examples assume you are running Linux.  There will be slight differences if you are using MacOS or Windows*
 2. Verify Oracle Java 7 (or higher) is installed
 
     ```
