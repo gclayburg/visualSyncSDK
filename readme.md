@@ -3,14 +3,13 @@
 # Quickstart
 
 1. clone this repository to a directory on your local machine
+
+    ```
     $ mkdir development
     $ cd development
     $ git clone git@github.com:gclayburg/visualSyncSDK.git
 
-
-
-* **Note: These examples assume you are running on a Linux system.  However, Windows systems also work, you'll just need to adjust the commands as necessary.  **
-
+    ```
 2. verify Java 7 (or higher) is installed
 3. Use gradle to run the application
 ```
